@@ -24,7 +24,7 @@
 //                 alert("Поздравляю! Для вас доступна специальная акция!")
 //             }
 //             isConfirm = true;
-//         } else if (!answerQuestion && answerQuestion === sum){
+//         } else if (!answerQuestion){
 //             a++;
 //             b++;
 //             alert("Вы не прошли проверку! Повторите попытку.");
