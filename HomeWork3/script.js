@@ -91,33 +91,33 @@ let users = [
 
 //3*) Разделить по ролям
 //...........................................................
-function splitUsersByRole(){
-    let userIds = [];
-    let adminIds = [];
+// function splitUsersByRole(){
+//     let userIds = [];
+//     let adminIds = [];
 
-    for (let user of users) {
-        if (user.role === 'user') {
-            userIds.push(user.id);
-        } else if (user.role === 'admin') {
-            adminIds.push(user.id);
-        }
-    }
+//     for (let user of users) {
+//         if (user.role === 'user') {
+//             userIds.push(user.id);
+//         } else if (user.role === 'admin') {
+//             adminIds.push(user.id);
+//         }
+//     }
 
-    return [userIds, adminIds];
-}
+//     return [userIds, adminIds];
+// }
 
-function splitUsersByRoleUniversal() {
-    let result = {};
+// function splitUsersByRoleUniversal() {
+//     let result = {};
 
-    for (let user of users) {
-        let role = user.role;
-        if (!result[role]) {
-            result[role] = [];
-        }
-        result[role].push(user.id);
-    }
+//     for (let user of users) {
+//         let role = user.role;
+//         if (!result[role]) {
+//             result[role] = [];
+//         }
+//         result[role].push(user.id);
+//     }
 
-    return result;
-}
-console.log(splitUsersByRole());
-console.log(splitUsersByRoleUniversal());
+//     return result;
+// }
+// console.log(splitUsersByRole());
+// console.log(splitUsersByRoleUniversal());
