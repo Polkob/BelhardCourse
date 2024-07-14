@@ -1,0 +1,100 @@
+﻿document.body.style.background = "red"; 
+
+----------------------------
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Заголовок</title>
+	</head>
+	<body>Прекрасный документ</body>
+</html>
+
+
+----------------------------
+
+document.documentElement
+
+----------------------------
+
+document.body
+
+----------------------------
+
+document.head
+
+----------------------------
+
+elem.childNodes
+elem.firstChild
+elem.lastChild
+
+----------------------------
+
+for (let node of document.body.childNodes) {
+	alert(node); // покажет все узлы из коллекции
+}
+
+----------------------------
+
+Array.from(document.body.childNodes)
+
+----------------------------
+
+<div id="elem">
+	<div id="elem-content">Element</div>
+</div>
+
+let elem = document.getElementById('elem');
+
+----------------------------
+
+<div id="elem">
+	<div class="elem-content">Element</div>
+</div>
+
+let elem = document.getElementsByClassName('elem-content');
+
+----------------------------
+
+<div id="elem">
+	<span class="elem-content">Element</span>
+</div>
+
+let elem = document.getElementsByTagName('span');
+
+----------------------------
+
+elem.querySelector(css)
+elem.querySelectorAll(css)
+
+----------------------------
+
+<input value="Нажми меня" onclick="alert('Клик!')" type="button">
+
+----------------------------
+
+<input id="elem" type="button" value="Нажми меня!">
+
+  elem.onclick = function() {
+	alert('Спасибо');
+  };
+
+----------------------------
+
+<button onclick="alert(this.innerHTML)">Нажми меня</button>
+
+----------------------------
+
+element.addEventListener(event, handler, [options]);
+
+----------------------------
+
+element.removeEventListener(event, handler, [options]); - удаляет обработчик
+
+----------------------------
+
+function clickHandler (event) {
+	alert(event.type + “ на ” + event.currentTarget);
+	alert(“Координаты: “ + event.clientX + “:” + event.client); 
+}
