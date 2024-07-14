@@ -1,38 +1,59 @@
+document.body.style.background = "skyblue";
 
+console.log(document.querySelector('sector.sector-three > div:last-child > p:last-child'));
 
+console.log(document.querySelector('sector.sector-two .text[important]'));
 
-let p = document.getElementsByClassName('sector-three')[0]
-.lastElementChild
-.lastElementChild;
+console.log(document.querySelector('#bold-text'));
 
-let importantP = document.querySelector('[important]');
+console.log(document.querySelector('.image.image-four'));
 
-let boldText = document.querySelector('#bold-text');
-let boldText2 = document.getElementById('bold-text');
+const fiveElement = document.querySelector('sector.sector-two .text[important]');
+console.log(fiveElement.previousElementSibling);
+console.log(fiveElement.nextElementSibling);
 
-let imageFour = document.querySelector('.image-four');
-let imageFour2 = document.querySelector('.image.image-four');
+console.log(document.querySelector('.image.image-one img'));
+console.log(document.querySelector('.image.image-two img'));
 
-let prevElem = importantP.previousElementSibling;
-let nextElem = importantP.nextElementSibling;
+console.log(document.querySelector('.image.image-three img'));
+console.log(document.querySelector('.image.image-four img'));
 
-let vozElems = document.querySelectorAll('[alt^="Воз"]');
+console.log(document.querySelectorAll('sector.sector-three p'));
 
-let daElem = document.querySelectorAll("[alt$=' Да']");
+console.log(document.querySelectorAll('[id]'));
 
-let sectorThree = document.querySelector('.sector-three');
-
-let elementsWithId = document.querySelectorAll('[id]');
-
-
-
-
-function countChildren(elem) {
-    return elem.children.length;
+function getChildElementCount(element) {
+    return element.children.length;
 }
 
-function countChildren2(elem) {
-    return elem.childElementCount;
+function setHtmlContent(selector, htmlContent) {
+    document.querySelectorAll(selector).forEach(element => {
+        element.innerHTML = htmlContent;
+    });
 }
-countChildren(sectorThree); // 3
-countChildren2(sectorThree); // 3
+
+// setHtmlContent('p', '<strong>Новый текст для всех параграфов</strong>');
+
+function logClickTime(event) {
+    const clickTime = new Date();
+    console.log(`Клик произошел в ${clickTime.toLocaleTimeString()}`);
+}
+
+document.body.addEventListener('click', logClickTime);
+
+function handleClickMeButton() {
+    alert('Click!');
+}
+
+document.querySelector('button').addEventListener('click', handleClickMeButton);
+
+function handleNumberParagraphClick(event) {
+    if (event.target.tagName.toLowerCase() === 'p') {
+      const number = event.target.textContent.trim();
+      if (!isNaN(number) && number !== '') {
+        alert(`${number}`);
+      }
+    }
+  }
+  
+document.body.addEventListener('click', handleNumberParagraphClick);
