@@ -1,0 +1,14 @@
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+a.active {
+    text-decoration: none;
+    cursor: default;
+    touch-action: none;
+    color: black;
+}
