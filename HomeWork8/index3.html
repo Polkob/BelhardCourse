@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Форма регистрации</title>
+  <link rel="stylesheet" href="task3/styles.css" />
+  
+</head>
+
+<body>
+  
+  <form id="registration-form">
+    <h1>Создание почтового ящика</h1>
+    <p class="message"></p>
+    <div class="form-group">
+      <label for="name">Имя</label>
+      <div class="name">
+        <input type="text" id="name" name="name" required>
+      </div>
+      <label for="lastname">Фамилия</label>
+      <div class="name">
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="date-of-birth">Дата рождения</label>
+      <div class="date-of-birth" name="date-of-birth">
+        <select id="day" name="day" required>
+          <option value="">День</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select id="month" name="month" required>
+          <option value="">Месяц</option>
+          <option value="1">Январь</option>
+          <option value="2">Февраль</option>
+        </select>
+        <select id="year" name="year" required>
+          <option value="">Год</option>
+          <option value="1990">1990</option>
+          <option value="1991">1991</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Пол</label>
+      <div class="gender-selection">
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Мужской</label>
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        <label for="gender-female">Женский</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email-username">Email</label>
+      <div class="email-input">
+        <input type="text" id="email-username" name="email-username" required>
+        <select id="email-domain" name="email-domain" required>
+          <option value="gmail.com">@gmail.com</option>
+          <option value="mail.ru">@mail.ru</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+
+      <label for="password">Пароль</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <label for="confirm-password">Подтвердите пароль</label>
+      <div class="password-wrapper">
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+    </div>
+    <button class="submit" type="submit">Создать</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

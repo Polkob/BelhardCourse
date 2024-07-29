@@ -1,0 +1,193 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #666666;
+    font-family: monospace;
+}
+
+#registration-form {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form-group label {
+    font-size: 14px;
+    opacity: 0.5;
+
+}
+
+.form-group .name {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.form-group .name input[type="text"] {
+    width: 50%;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.form-group .name input[type="text"]:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.date-of-birth {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.date-of-birth select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-family: inherit;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.date-of-birth select:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+.date-of-birth select option {
+    background-color: #fff;
+}
+
+.gender-selection{
+    display: flex;
+}
+
+.gender-selection input[type="radio"]:checked {
+    border-color: #000000;
+    background-color: #4CAF50;
+}
+
+.gender-selection label {
+    font-size: 14px;
+    color: #858585; 
+    cursor: pointer;
+}
+
+.gender-selection input[type="radio"]:checked + label {
+    color: #000000; 
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: inherit;
+}
+
+.email-input input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.email-input input[type="text"]:focus {
+    outline: none;
+}
+
+.email-input select {
+    appearance: none;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 24px 8px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 24px;
+}
+
+.email-input select:focus {
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.password-wrapper input {
+    width: 50%;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    flex: 1;
+    margin-bottom: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 12px 20px;
+    background-color: #2a64bc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.message {
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .message.error {
+    background-color: #ffcdd2;
+    color: #c62828;
+  }
+  
+  .message.success {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+  }

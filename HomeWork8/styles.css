@@ -1,0 +1,33 @@
+a {
+  color: red;
+  font-size: 16px;
+  text-decoration: none;
+
+  a:hover {
+    color: blue;
+  }
+
+  a:visited {
+    color: red;
+  }
+}
+
+p,
+span {
+  color: red;
+  font-size: 16px;
+}
+
+button {
+  color: red;
+  font-size: 16px;
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 250px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px black;
+}
