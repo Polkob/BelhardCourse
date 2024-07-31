@@ -1,0 +1,87 @@
+#left {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    animation: move-left 6s infinite ease-out;
+}
+
+#ball {
+    position: absolute;
+    left: 0%;
+    top: 45%;
+    animation: move-ball 6s infinite linear;
+}
+
+#right {
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    animation: move-right 6s infinite ease-out;
+}
+
+@keyframes move-left {
+    0% {
+        top: 55%;
+    }
+
+    25% {
+        top: 45%;
+    }
+
+    50% {
+        top: 45%;
+    }
+
+    75% {
+        top: 45%;
+    }
+
+    100% {
+        top: 55%;
+    }
+}
+
+@keyframes move-ball {
+    0% {
+        left: 15%;
+        top: 55%;
+    }
+    25% {
+        left: 45%;
+        top: 35%;
+    }
+    50% {
+        left: 80%;
+        top: 55%;
+    }
+    75% {
+        left: 45%;
+        top: 35%;
+    }
+    100% {
+        left: 15%;
+        top: 55%;
+    }
+}
+
+@keyframes move-right {
+    0% {
+        top: 45%;
+    }
+
+    25% {
+        top: 45%;
+    }
+
+    50% {
+        top: 55%;
+    }
+
+    75% {
+        top: 45%;
+    }
+
+    100% {
+        top: 45%;
+    }
+}
