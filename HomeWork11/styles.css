@@ -1,0 +1,67 @@
+body {
+  margin: 20px;
+}
+
+/* ---------------------------------------------------- */
+
+.player {
+  width: 100%;
+}
+
+.player video {
+  width: 100%;
+}
+
+.player .controls {
+  width: 50%;
+  max-width: 400px;
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.player .progress {
+  flex: 100% 0 0;
+  background: #ccc;
+}
+
+.player .progress span {
+  width: 0;
+  display: block;
+  height: 20px;
+  background: #5944ff;
+  margin-top: 5px;
+}
+
+.volume-control {
+  flex: 100% 0 0;
+  background: #ccc;
+  
+}
+
+.volume-control .volume-bar {
+  width: 0;
+  display: block;
+  height: 20px;
+  background: #5944ff;
+  margin-top: 5px;
+}
+
+.play,
+.sound,
+.fullscreen,
+.restart {
+  cursor: pointer;
+  border: 1px solid black;
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  transition: background-color 0.3s;
+}
+
+
+.muted{
+  background-color: #ccc;
+}
